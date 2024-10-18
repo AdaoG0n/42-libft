@@ -87,6 +87,3 @@ re: fclean all<br/>
     Testar as funções para garantir que se comportam como esperado.<br/>
     Compilar a biblioteca com o Makefile.<br/>
 
----
-
-![](https://visitcount.itsvg.in/api?id=AdaoG0n&icon=7&color=1)
