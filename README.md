@@ -52,4 +52,37 @@ parte do padrao C99). Abaixo está a lista de funcoes:<br/>
     Ao implementar as funcoes, seguir a assinatura original, mas adicionar o prefixo ft_. Por exemplo:<br/>
         int strlen(const char *s); → int ft_strlen(const char *s);<br/>
    Necessário garantir que todas as funcoes compilem corretamente com os avisos e erros ativados (flags: -Wall, -Wextra, -Werror).<br/>
-   
+<br/>
+<br/>
+7. Uso do Makefile e criação da biblioteca<br/>
+No Makefile, usar o comando "ar" para criar a biblioteca estática a partir dos arquivos .o. Algo assim:<br/>
+<br/>
+makefile<br/>
+<br/>
+NAME = libft.a<br/>
+CC = gcc<br/>
+CFLAGS = -Wall -Wextra -Werror<br/>
+SRC = ft_strlen.c ft_isalpha.c ... # lista dos arquivos .c<br/>
+OBJ = $(SRC:.c=.o)<br/>
+<br/>
+all: $(NAME)<br/>
+<br/>
+$(NAME): $(OBJ)<br/>
+	ar rcs $(NAME) $(OBJ)<br/>
+<br/>
+clean:<br/>
+	rm -f $(OBJ)<br/>
+ <br/>
+fclean: clean<br/>
+	rm -f $(NAME)<br/>
+<br/>
+re: fclean all<br/>
+<br/>
+<br/>
+<br/>
+8. Próximos passos<br/>
+<br/>
+    Implementar cada função no seu próprio arquivo .c.<br/>
+    Adicionar a declaração das funções no arquivo libft.h.<br/>
+    Testar as funções para garantir que se comportam como esperado.<br/>
+    Compilar a biblioteca com o Makefile.<br/>
