@@ -86,4 +86,3 @@ re: fclean all<br/>
     Adicionar a declaração das funções no arquivo libft.h.<br/>
     Testar as funções para garantir que se comportam como esperado.<br/>
     Compilar a biblioteca com o Makefile.<br/>
-
