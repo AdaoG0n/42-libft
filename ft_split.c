@@ -27,7 +27,7 @@ static char	*get_next_word(char const **s, char c)
 	char const	*word_start;
 	size_t		word_len;
 
-	*word_start = *s;
+	word_start = *s;
 	word_len = 0;
 	while (**s && **s != c)
 	{
