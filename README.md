@@ -85,42 +85,44 @@ In the Makefile, use the "ar" command to create the static library from the .o f
     Test the functions to ensure they behave as expected.<br/>
     Compile the library with the Makefile.<br/>
     <br/>
-    Character manipulation functions:<br/>
-        ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint<br/>
-        ft_toupper, ft_tolower<br/>
-        <br/>
-    Basic memory manipulation functions:<br/>
-        ft_memset, ft_bzero<br/>
-        ft_memcpy, ft_memmove<br/>
-        ft_memchr, ft_memcmp<br/>
-        <br/>
-    Basic string manipulation functions:<br/>
-        ft_strlen<br/>
-        ft_strchr, ft_strrchr<br/>
-        ft_strncmp<br/>
-        ft_strlcpy, ft_strlcat<br/>
-        <br/>
-    Conversion functions:<br/>
-        ft_atoi<br/>
-        ft_itoa<br/><br/>
+    <br/>
+# Types of functions:
+
+   	Character manipulation functions:
+        ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
+        ft_toupper, ft_tolower
+
+   	Basic memory manipulation functions:
+        ft_memset, ft_bzero
+        ft_memcpy, ft_memmove
+        ft_memchr, ft_memcmp
         
-    Memory allocation functions:<br/>
-        ft_calloc<br/>
-        ft_strdup<br/>
-        <br/>
-    More complex string manipulation functions:<br/>
-        ft_substr<br/>
-        ft_strjoin<br/>
-        ft_strtrim<br/>
-        ft_split<br/>
-        <br/>
-    Functions that use function pointers:<br/>
-        ft_strmapi<br/>
-        ft_striteri<br/>
-        <br/>
-    Output functions:<br/>
-        ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd<br/>
-<br/>
+    	Basic string manipulation functions:
+        ft_strlen
+        ft_strchr, ft_strrchr
+        ft_strncmp
+        ft_strlcpy, ft_strlcat
+        
+    	Conversion functions:
+        ft_atoi
+        ft_itoa
+        
+    	Memory allocation functions:
+        ft_calloc
+        ft_strdup
+        
+    	More complex string manipulation functions:
+        ft_substr
+        ft_strjoin
+        ft_strtrim
+        ft_split
+        
+    	Functions that use function pointers:
+        ft_strmapi
+        ft_striteri
+        
+    	Output functions:
+        ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
 
 Study tips:<br/>
 
