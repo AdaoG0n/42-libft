@@ -13,7 +13,10 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>  // For size_t
+# include <stddef.h>
+# include <stdlib.h>
+# include <stdint.h>
+# include <unistd.h>
 
 // Character checking functions
 int		ft_isalpha(int x);
