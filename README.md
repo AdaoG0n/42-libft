@@ -1,16 +1,19 @@
 # 42_libft
 <br/>
-1. Objective<br/>
+
+### 1. Objective
+
 Create a library called libft.a, which will contain various implemented functions,<br/>
 with behaviors similar to the functions of the standard C language library (libc),<br/>
 but with the prefix ft_ in the function names.<br/>
-<br/>
-2. Files to submit<br/>
+
+### 2. Files to submit<br/>
  A Makefile: to automate the compilation of the library.<br/>
     The header file libft.h: where the functions to be implemented will be declared.<br/>
     The source code files, with names in the format ft_*.c: for example, ft_strlen.c, ft_isalpha.c, and so on.<br/>
-<br/>
-3. Makefile Rules<br/>
+
+### 3. Makefile Rules
+
 In the Makefile, it's necessary to include the following commands:<br/>
 <br/>
    NAME: the name of the library (in this case, libft.a).<br/>
@@ -18,22 +21,25 @@ In the Makefile, it's necessary to include the following commands:<br/>
    clean: command that deletes object files (.o).<br/>
    fclean: command that deletes object files and the libft.a library.<br/>
    re: command that executes fclean and then recompiles everything (a complete "rebuild").<br/>
-<br/>
-4. Technical Considerations<br/>
+
+### 4. Technical Considerations
+
 Global variables are prohibited.<br/>
     Use static functions when auxiliary functions are needed within a file.<br/>
     Place all files in the root directory of the repository.
     Compile the files with the flags: -Wall, -Wextra and -Werror.<br/>
     The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
-<br/>
-5. Technical Considerations<br/>
+
+### 5. Technical Considerations
+
 Global variables are prohibited.<br/>
     Use static functions when auxiliary functions are needed within a file.<br/>
     Place all files in the root directory of the repository.<br/>
     Compile the files with the flags: -Wall, -Wextra, and -Werror.<br/>
     The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
-<br/>
-6. Part 1: Recreating standard library functions (Libc) <br/>
+
+### 6. Part 1: Recreating standard library functions (Libc)
+
 It's necessary to recreate the following functions from the standard C language library, using the prefix ft_ for each of them.<br/>
 The implementations must follow the specifications of the man page for each function, but without using the restrict qualifier (which is part of the C99 standard). Below is the list of functions:<br/>
 <br/>
@@ -46,15 +52,16 @@ The implementations must follow the specifications of the man page for each func
 <br/>
     Functions that require dynamic memory allocation (using malloc):<br/>
         calloc, strdup<br/>
-<br/>
-7. General Tips<br/>
-<br/>
+
+### 7. General Tips
+
  To understand how each function works, you can consult the "man pages" (for example, man strlen to see how strlen works).<br/>
  When implementing the functions, follow the original signature, but add the ft_ prefix. For example:<br/>
         int strlen(const char *s); → int ft_strlen(const char *s);<br/>
     Make sure all functions compile correctly with warnings and errors enabled (flags: -Wall, -Wextra, -Werror).<br/>
-<br/>
-8. Using the Makefile and creating the library<br/>
+
+### 8. Using the Makefile and creating the library
+
 In the Makefile, use the "ar" command to create the static library from the .o files. Something like this:<br/>
 
 		makefile
@@ -78,15 +85,16 @@ In the Makefile, use the "ar" command to create the static library from the .o f
 
 		re: fclean all
 
-9. Next steps<br/>
-<br/>
+### 9. Next steps
+
     Implement each function in its own .c file.<br/>
     Add the declaration of the functions in the libft.h file.<br/>
     Test the functions to ensure they behave as expected.<br/>
     Compile the library with the Makefile.<br/>
     <br/>
     <br/>
-# Types of functions:
+
+### Types of functions:
 
    	Character manipulation functions:
         ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
@@ -124,7 +132,7 @@ In the Makefile, use the "ar" command to create the static library from the .o f
     	Output functions:
         ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
 
-Study tips:<br/>
+### Study tips:
 
     Start with the simplest functions and progress gradually.
     For each function:
@@ -147,6 +155,7 @@ Good luck with your studies!
 
 
 ### Some testers
+
 [Francinette](https://github.com/xicodomingues/francinette)<br/>
 [libftTester](https://github.com/Tripouille/libftTester)<br/>
 [libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/>
