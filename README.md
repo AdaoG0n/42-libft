@@ -161,4 +161,9 @@ Good luck with your studies!
 [libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/>
 [libft-war-machine](https://github.com/0x050f/libft-war-machine)
 
-<img align="center" src="./srcs/alltestpassed.png" width="50%"/>
+
+<img align="center" src="./src/libftwarmachinepassed.png" width="50%"/>
+<img align="center" src="./src/libftunittestpassed.png" width="50%"/>
+<img align="center" src="./src/libfttesterpassed.png" width="50%"/>
+<img align="center" src="./src/fsoarespassed.png" width="50%"/>
+<img align="center" src="./src/alltestpassed.png" width="50%"/>
