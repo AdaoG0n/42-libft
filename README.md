@@ -145,3 +145,6 @@ Dicas para o estudo:
 Lembre-se, a compreensão vem com o tempo e a prática. 
 Não se preocupe se não entender tudo de uma vez. Volte às funções anteriores regularmente para reforçar seu entendimento.
 Boa sorte com os estudos!
+
+### To test you can use libfttester
+[libftTester](https://github.com/Tripouille/libftTester)
