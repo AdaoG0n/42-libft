@@ -86,3 +86,62 @@ re: fclean all<br/>
     Adicionar a declaração das funções no arquivo libft.h.<br/>
     Testar as funções para garantir que se comportam como esperado.<br/>
     Compilar a biblioteca com o Makefile.<br/>
+    <br/>
+    <br/>
+    
+    Funções de manipulação de caracteres:
+        ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
+        ft_toupper, ft_tolower
+        
+    Funções básicas de manipulação de memória:
+        ft_memset, ft_bzero
+        ft_memcpy, ft_memmove
+        ft_memchr, ft_memcmp
+        
+    Funções básicas de manipulação de strings:
+        ft_strlen
+        ft_strchr, ft_strrchr
+        ft_strncmp
+        ft_strlcpy, ft_strlcat
+        
+    Funções de conversão:
+        ft_atoi
+        ft_itoa
+        
+    Funções de alocação de memória:
+        ft_calloc
+        ft_strdup
+        
+    Funções mais complexas de manipulação de strings:
+        ft_substr
+        ft_strjoin
+        ft_strtrim
+        ft_split
+        
+    Funções que usam ponteiros para funções:
+        ft_strmapi
+        ft_striteri
+        
+    Funções de output:
+        ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
+
+Dicas para o estudo:
+
+    Comecar com as funções mais simples e ir progredindo.
+    Para cada função:
+        Ler a descrição e entender o que ela deve fazer.
+        Analizar o código linha por linha.
+        Escrever comentários explicando o que cada parte do código faz.
+        Tentar reescrever a função por conta própria sem olhar o código original.
+        Criar casos de teste para verificar se a função funciona corretamente.
+    Usar recursos como:
+        A página do manual (man) para entender as funções originais da libc.
+        Desenhar diagramas para visualizar como as funções manipulam memória ou strings.
+        Escrever pequenos programas que usam essas funções para ver como elas funcionam na prática.
+    Praticar explicar cada função em voz alta, como se estivesse ensinando alguém.
+    Identificar padrões e conceitos que se repetem entre as funções (como alocação de memória, iteração sobre strings, etc.).
+    Não hesitar em revisar conceitos básicos de C, como ponteiros, alocação de memória, e manipulação de strings.
+
+Lembre-se, a compreensão vem com o tempo e a prática. 
+Não se preocupe se não entender tudo de uma vez. Volte às funções anteriores regularmente para reforçar seu entendimento.
+Boa sorte com os estudos!
