@@ -1,150 +1,148 @@
 # 42_libft
 <br/>
-1. Objetivo<br/>
-Criar uma biblioteca chamada libft.a, que conterá várias funcoes implementadas,<br/>
-com comportamentos semelhantes às funcoes da biblioteca padrão da linguagem C (libc),<br/>
-porem com o prefixo ft_ nos nomes das funcoes.<br/>
+1. Objective<br/>
+Create a library called libft.a, which will contain various implemented functions,<br/>
+with behaviors similar to the functions of the standard C language library (libc),<br/>
+but with the prefix ft_ in the function names.<br/>
 <br/>
+2. Files to submit<br/>
+ A Makefile: to automate the compilation of the library.<br/>
+    The header file libft.h: where the functions to be implemented will be declared.<br/>
+    The source code files, with names in the format ft_*.c: for example, ft_strlen.c, ft_isalpha.c, and so on.<br/>
 <br/>
-3. Arquivos para entregar<br/>
-    Um Makefile: para automatizar a compilacao da biblioteca.<br/>
-    O arquivo de cabecalho libft.h: onde estarao declaradas as funcoes a implementar.<br/>
-    Os arquivos de código-fonte, com os nomes no formato ft_*.c: por exemplo, ft_strlen.c, ft_isalpha.c e assim por diante.<br/>
+3. Makefile Rules<br/>
+In the Makefile, it's necessary to include the following commands:<br/>
 <br/>
+   NAME: the name of the library (in this case, libft.a).<br/>
+   all: command that will compile all files and create the library.<br/>
+   clean: command that deletes object files (.o).<br/>
+   fclean: command that deletes object files and the libft.a library.<br/>
+   re: command that executes fclean and then recompiles everything (a complete "rebuild").<br/>
 <br/>
-4. Regras do Makefile<br/>
-No Makefile, necessario incluir os seguintes comandos:<br/>
+4. Technical Considerations<br/>
+Global variables are prohibited.<br/>
+    Use static functions when auxiliary functions are needed within a file.<br/>
+    Place all files in the root directory of the repository.
+    Compile the files with the flags: -Wall, -Wextra and -Werror.<br/>
+    The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
 <br/>
-    NAME: o nome da biblioteca (neste caso, libft.a).<br/>
-    all: comando que compilará todos os arquivos e criarao a biblioteca.<br/>
-    clean: comando que apaga os arquivos objetos (.o).<br/>
-    fclean: comando que apaga os arquivos objetos e a biblioteca libft.a.<br/>
-    re: comando que executa o fclean e, em seguida, recompila tudo (um "rebuild" completo).<br/>
+5. Technical Considerations<br/>
+Global variables are prohibited.<br/>
+    Use static functions when auxiliary functions are needed within a file.<br/>
+    Place all files in the root directory of the repository.<br/>
+    Compile the files with the flags: -Wall, -Wextra, and -Werror.<br/>
+    The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
 <br/>
+6. Part 1: Recreating standard library functions (Libc) <br/>
+It's necessary to recreate the following functions from the standard C language library, using the prefix ft_ for each of them.<br/>
+The implementations must follow the specifications of the man page for each function, but without using the restrict qualifier (which is part of the C99 standard). Below is the list of functions:<br/>
 <br/>
-4. Consideracoes tecnicas<br/>
-    Variáveis globais são proibidas.<br/>
-    Usar funcoes estáticas (static) quando for preciso funcoes auxiliares dentro de um arquivo.<br/>
-    Colocar todos os arquivos no diretório raiz do repositório.<br/>
-    Compilar os arquivos com as flags: -Wall, -Wextra e -Werror.<br/>
-    A biblioteca deve ser criada usando o comando "ar" e o arquivo gerado (libft.a) deve estar no diretório raiz.<br/>
-<br/>
-<br/>
-5. Parte 1: Recriar funcoes da biblioteca padrao (Libc)<br/>
-É necessário recriar as seguintes funcoes da biblioteca padrão da linguagem C, usando o prefixo ft_ para cada uma delas.<br/>
-As implementacoes devem seguir as especificacoes da man page de cada funcoes, mas sem usar o qualificador restrict (que faz<br/>
-parte do padrao C99). Abaixo está a lista de funcoes:<br/>
-<br/>
-    Funcoes que não usam alocacao dinamica de memória:<br/>
+    Functions that don't use dynamic memory allocation:<br/>
         isalpha, isdigit, isalnum, isascii, isprint<br/>
         strlen, memset, bzero, memcpy, memmove<br/>
         strlcpy, strlcat, toupper, tolower<br/>
         strchr, strrchr, strncmp, memchr, memcmp<br/>
         strnstr, atoi<br/>
 <br/>
-    Funções que requerem alocacao dinamica de memória (usando malloc):<br/>
+    Functions that require dynamic memory allocation (using malloc):<br/>
         calloc, strdup<br/>
 <br/>
+7. General Tips<br/>
 <br/>
-7. Dicas gerais<br/>
-<br/>
-    Para entender como cada funcao funciona, pode-se consultar as "man pages" (por exemplo, man strlen para ver como o strlen funciona).<br/>
-    Ao implementar as funcoes, seguir a assinatura original, mas adicionar o prefixo ft_. Por exemplo:<br/>
+ To understand how each function works, you can consult the "man pages" (for example, man strlen to see how strlen works).<br/>
+ When implementing the functions, follow the original signature, but add the ft_ prefix. For example:<br/>
         int strlen(const char *s); → int ft_strlen(const char *s);<br/>
-   Necessário garantir que todas as funcoes compilem corretamente com os avisos e erros ativados (flags: -Wall, -Wextra, -Werror).<br/>
+    Make sure all functions compile correctly with warnings and errors enabled (flags: -Wall, -Wextra, -Werror).<br/>
 <br/>
+8. Using the Makefile and creating the library<br/>
+In the Makefile, use the "ar" command to create the static library from the .o files. Something like this:<br/>
+
+		makefile
+
+		NAME = libft.a
+		CC = gcc
+		CFLAGS = -Wall -Wextra -Werror
+		SRC = ft_strlen.c ft_isalpha.c ... # list of .c files
+		OBJ = $(SRC:.c=.o)
+
+		all: $(NAME)
+
+		$(NAME): $(OBJ)
+		ar rcs $(NAME) $(OBJ)
+
+		clean:
+		rm -f $(OBJ)
+ 
+		fclean: clean
+		rm -f $(NAME)
+
+		re: fclean all
+
+9. Next steps<br/>
 <br/>
-7. Uso do Makefile e criação da biblioteca<br/>
-No Makefile, usar o comando "ar" para criar a biblioteca estática a partir dos arquivos .o. Algo assim:<br/>
-<br/>
-makefile<br/>
-<br/>
-NAME = libft.a<br/>
-CC = gcc<br/>
-CFLAGS = -Wall -Wextra -Werror<br/>
-SRC = ft_strlen.c ft_isalpha.c ... # lista dos arquivos .c<br/>
-OBJ = $(SRC:.c=.o)<br/>
-<br/>
-all: $(NAME)<br/>
-<br/>
-$(NAME): $(OBJ)<br/>
-	ar rcs $(NAME) $(OBJ)<br/>
-<br/>
-clean:<br/>
-	rm -f $(OBJ)<br/>
- <br/>
-fclean: clean<br/>
-	rm -f $(NAME)<br/>
-<br/>
-re: fclean all<br/>
-<br/>
-<br/>
-<br/>
-8. Próximos passos<br/>
-<br/>
-    Implementar cada função no seu próprio arquivo .c.<br/>
-    Adicionar a declaração das funções no arquivo libft.h.<br/>
-    Testar as funções para garantir que se comportam como esperado.<br/>
-    Compilar a biblioteca com o Makefile.<br/>
+    Implement each function in its own .c file.<br/>
+    Add the declaration of the functions in the libft.h file.<br/>
+    Test the functions to ensure they behave as expected.<br/>
+    Compile the library with the Makefile.<br/>
     <br/>
-    <br/>
-    
-    Funções de manipulação de caracteres:
-        ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
-        ft_toupper, ft_tolower
+    Character manipulation functions:<br/>
+        ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint<br/>
+        ft_toupper, ft_tolower<br/>
+        <br/>
+    Basic memory manipulation functions:<br/>
+        ft_memset, ft_bzero<br/>
+        ft_memcpy, ft_memmove<br/>
+        ft_memchr, ft_memcmp<br/>
+        <br/>
+    Basic string manipulation functions:<br/>
+        ft_strlen<br/>
+        ft_strchr, ft_strrchr<br/>
+        ft_strncmp<br/>
+        ft_strlcpy, ft_strlcat<br/>
+        <br/>
+    Conversion functions:<br/>
+        ft_atoi<br/>
+        ft_itoa<br/><br/>
         
-    Funções básicas de manipulação de memória:
-        ft_memset, ft_bzero
-        ft_memcpy, ft_memmove
-        ft_memchr, ft_memcmp
-        
-    Funções básicas de manipulação de strings:
-        ft_strlen
-        ft_strchr, ft_strrchr
-        ft_strncmp
-        ft_strlcpy, ft_strlcat
-        
-    Funções de conversão:
-        ft_atoi
-        ft_itoa
-        
-    Funções de alocação de memória:
-        ft_calloc
-        ft_strdup
-        
-    Funções mais complexas de manipulação de strings:
-        ft_substr
-        ft_strjoin
-        ft_strtrim
-        ft_split
-        
-    Funções que usam ponteiros para funções:
-        ft_strmapi
-        ft_striteri
-        
-    Funções de output:
-        ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
+    Memory allocation functions:<br/>
+        ft_calloc<br/>
+        ft_strdup<br/>
+        <br/>
+    More complex string manipulation functions:<br/>
+        ft_substr<br/>
+        ft_strjoin<br/>
+        ft_strtrim<br/>
+        ft_split<br/>
+        <br/>
+    Functions that use function pointers:<br/>
+        ft_strmapi<br/>
+        ft_striteri<br/>
+        <br/>
+    Output functions:<br/>
+        ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd<br/>
+<br/>
 
-Dicas para o estudo:
+Study tips:<br/>
 
-    Comecar com as funções mais simples e ir progredindo.
-    Para cada função:
-        Ler a descrição e entender o que ela deve fazer.
-        Analizar o código linha por linha.
-        Escrever comentários explicando o que cada parte do código faz.
-        Tentar reescrever a função por conta própria sem olhar o código original.
-        Criar casos de teste para verificar se a função funciona corretamente.
-    Usar recursos como:
-        A página do manual (man) para entender as funções originais da libc.
-        Desenhar diagramas para visualizar como as funções manipulam memória ou strings.
-        Escrever pequenos programas que usam essas funções para ver como elas funcionam na prática.
-    Praticar explicar cada função em voz alta, como se estivesse ensinando alguém.
-    Identificar padrões e conceitos que se repetem entre as funções (como alocação de memória, iteração sobre strings, etc.).
-    Não hesitar em revisar conceitos básicos de C, como ponteiros, alocação de memória, e manipulação de strings.
+    Start with the simplest functions and progress gradually.
+    For each function:
+        Read the description and understand what it should do.
+        Analyze the code line by line.
+        Write comments explaining what each part of the code does.
+        Try to rewrite the function on your own without looking at the original code.
+        Create test cases to verify if the function works correctly.
+    Use resources such as:
+        The manual page (man) to understand the original libc functions.
+        Draw diagrams to visualize how functions manipulate memory or strings.
+        Write small programs that use these functions to see how they work in practice.
+    Practice explaining each function out loud, as if you were teaching someone.
+    Identify patterns and concepts that repeat across functions (such as memory allocation, iteration over strings, etc.).
+    Don't hesitate to review basic C concepts, such as pointers, memory allocation, and string manipulation.
 
-Lembre-se, a compreensão vem com o tempo e a prática. 
-Não se preocupe se não entender tudo de uma vez. Volte às funções anteriores regularmente para reforçar seu entendimento.
-Boa sorte com os estudos!
+Remember, understanding comes with time and practice. 
+Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.
+Good luck with your studies!
+
 
 ### To test you can use libftTester
 [libftTester](https://github.com/Tripouille/libftTester)
