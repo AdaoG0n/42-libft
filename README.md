@@ -146,8 +146,11 @@ Don't worry if you don't understand everything at once. Regularly revisit previo
 Good luck with your studies!
 
 
-### To test you can use libftTester
-[libftTester](https://github.com/Tripouille/libftTester)
+### Some testers
+[Francinette](https://github.com/xicodomingues/francinette)<br/>
+[libftTester](https://github.com/Tripouille/libftTester)<br/>
+[libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/>
+[libft-war-machine](https://github.com/0x050f/libft-war-machine)
 
 	[Mandatory]
 	ft_memset	: 1.OK 2.OK 
