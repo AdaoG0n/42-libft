@@ -1,7 +1,7 @@
 # 42_libft
 <br/>
-<img align="right" src="./src/Libft42.png" width="500"/>
-
+<img align="center" src="./src/Libft42.png" width="500"/>
+<br/>
 ### 1. Objective
 
 Create a library called libft.a, which will contain various implemented functions,<br/>
