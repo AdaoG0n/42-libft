@@ -1,5 +1,4 @@
 # 42_libft
-<br/>
 <img align="right" src="./src/Libft42.png" width="400"/>
 
 ### 1. Objective
