@@ -1,15 +1,6 @@
 # 42_libft
 <img align="right" src="./src/Libft42.png" width="400"/>
 
-<p align="center">
-        <a href="#Objective">Objective</a> •
-        <a href="#Files-to-submit">Files to submit</a> •
-        <a href="#Makefile-Rules">Makefile Rules</a> •
-        <a href="#Technical-Considerations">Technical Considerations</a> •
-<a href=General-Tips">General Tips</a> •
-<a href="#Study-tips">Study Tips</a> •
-<a href="#Some-testers>Testers</a> •
-</p>
 
 ### Objective
 
