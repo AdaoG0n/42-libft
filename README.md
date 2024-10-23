@@ -1,4 +1,4 @@
-# 42_libft
+# <a href="#" style="pointer-events: none;"> <img src="https://img.shields.io/badge/status-In_Progress-success?color=black&style=flat-square"/></a> • 42_libft 
 <img align="right" src="./src/Libft42.png" width="400"/>
 
 
@@ -159,5 +159,12 @@ Good luck with your studies!
 <img align="center" src="./src/libfttesterpassed.png" width="50%"/>
 <img align="center" src="./src/fsoarespassed.png" width="50%"/>
 <img align="center" src="./src/alltestpassed.png" width="50%"/>
+
+### Earned skills
+<p align="left">
+  <a href="#" style="pointer-events: none;">
+    <img src="https://skillicons.dev/icons?i=c" />
+  </a>
+</p>  
 
 ###### Projeto desenvolvido por: [Adão Gonçalves](https://github.com/AdaoG0n)
