@@ -1,18 +1,28 @@
 # 42_libft
 <img align="right" src="./src/Libft42.png" width="400"/>
 
-### 1. Objective
+<p align="center">
+        <a href="#Objective">Objective</a> •
+        <a href="#Files-to-submit">Files to submit</a> •
+        <a href="#Makefile-Rules">Makefile Rules</a> •
+        <a href="#Technical-Considerations">Technical Considerations</a> •
+<a href=General-Tips">General Tips</a> •
+<a href="#Study-tips">Study Tips</a> •
+<a href="#Some-testers>Testers</a> •
+</p>
+
+### Objective
 
 Create a library called libft.a, which will contain various implemented functions,<br/>
 with behaviors similar to the functions of the standard C language library (libc),<br/>
 but with the prefix ft_ in the function names.<br/>
 
-### 2. Files to submit<br/>
+### Files to submit<br/>
  A Makefile: to automate the compilation of the library.<br/>
     The header file libft.h: where the functions to be implemented will be declared.<br/>
     The source code files, with names in the format ft_*.c: for example, ft_strlen.c, ft_isalpha.c, and so on.<br/>
 
-### 3. Makefile Rules
+### Makefile Rules
 
 In the Makefile, it's necessary to include the following commands:<br/>
 <br/>
@@ -22,7 +32,7 @@ In the Makefile, it's necessary to include the following commands:<br/>
    fclean: command that deletes object files and the libft.a library.<br/>
    re: command that executes fclean and then recompiles everything (a complete "rebuild").<br/>
 
-### 4. Technical Considerations
+### Technical Considerations
 
 Global variables are prohibited.<br/>
     Use static functions when auxiliary functions are needed within a file.<br/>
@@ -30,15 +40,7 @@ Global variables are prohibited.<br/>
     Compile the files with the flags: -Wall, -Wextra and -Werror.<br/>
     The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
 
-### 5. Technical Considerations
-
-Global variables are prohibited.<br/>
-    Use static functions when auxiliary functions are needed within a file.<br/>
-    Place all files in the root directory of the repository.<br/>
-    Compile the files with the flags: -Wall, -Wextra, and -Werror.<br/>
-    The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
-
-### 6. Part 1: Recreating standard library functions (Libc)
+### Recreating standard library functions (Libc)
 
 It's necessary to recreate the following functions from the standard C language library, using the prefix ft_ for each of them.<br/>
 The implementations must follow the specifications of the man page for each function, but without using the restrict qualifier (which is part of the C99 standard). Below is the list of functions:<br/>
@@ -53,14 +55,14 @@ The implementations must follow the specifications of the man page for each func
     Functions that require dynamic memory allocation (using malloc):<br/>
         calloc, strdup<br/>
 
-### 7. General Tips
+### General Tips
 
  To understand how each function works, you can consult the "man pages" (for example, man strlen to see how strlen works).<br/>
  When implementing the functions, follow the original signature, but add the ft_ prefix. For example:<br/>
         int strlen(const char *s); → int ft_strlen(const char *s);<br/>
     Make sure all functions compile correctly with warnings and errors enabled (flags: -Wall, -Wextra, -Werror).<br/>
 
-### 8. Using the Makefile and creating the library
+### Using the Makefile and creating the library
 
 In the Makefile, use the "ar" command to create the static library from the .o files. Something like this:<br/>
 
@@ -85,7 +87,7 @@ In the Makefile, use the "ar" command to create the static library from the .o f
 
 		re: fclean all
 
-### 9. Next steps
+### Next steps
 
     Implement each function in its own .c file.
     Add the declaration of the functions in the libft.h file.
