@@ -87,12 +87,11 @@ In the Makefile, use the "ar" command to create the static library from the .o f
 
 ### 9. Next steps
 
-    Implement each function in its own .c file.<br/>
-    Add the declaration of the functions in the libft.h file.<br/>
-    Test the functions to ensure they behave as expected.<br/>
-    Compile the library with the Makefile.<br/>
-    <br/>
-    <br/>
+    Implement each function in its own .c file.
+    Add the declaration of the functions in the libft.h file.
+    Test the functions to ensure they behave as expected.
+    Compile the library with the Makefile.
+    
 
 ### Types of functions:
 
