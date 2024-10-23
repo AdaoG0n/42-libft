@@ -1,6 +1,7 @@
 # <a href="#" style="pointer-events: none;"> <img src="https://img.shields.io/badge/status-In_Progress-success?color=black&style=flat-square"/></a> • 42_libft 
-<img align="right" src="./src/Libft42.png" width="400"/>
-
+ <a href="#" style="pointer-events: none;">
+ <img align="right" src="./src/libft42-removebg-preview.png" width="400"/>
+ </a>
 
 ### Objective
 
