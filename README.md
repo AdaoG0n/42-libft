@@ -169,3 +169,5 @@ Good luck with your studies!
 </p>  
 
 ###### Projeto desenvolvido por: [Adão Gonçalves](https://github.com/AdaoG0n)
+
+![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FAdaoG0n%2F42_libft.json&style=flat&labelColor=black&color=blue)
