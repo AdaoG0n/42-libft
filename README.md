@@ -160,7 +160,7 @@ Good luck with your studies!
 <img align="center" src="./src/libftunittestpassed.png" width="50%"/>
 <img align="center" src="./src/libfttesterpassed.png" width="50%"/>
 <img align="center" src="./src/fsoarespassed.png" width="50%"/>
-<img align="center" src="./src/alltestpassed.png" width="50%"/>
+
 
 ### Earned skills
 <p align="left">
