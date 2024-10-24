@@ -1,18 +1,20 @@
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	char	*substr;
-	size_t	s_len;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		return (ft_strdup(""));
-	if (len > s_len - start)
-		len = s_len - start;
-	substr = (char *)malloc(sizeof(char) * (len + 1));
-	if (!substr)
-		return (NULL);
-	ft_strlcpy(substr, s + start, len + 1);
-	return (substr);
+int main(void) {
+    const char *original = "Hello, world!";
+    unsigned int start = 7;
+    size_t len = 5;
+    
+    char *substring = ft_substr(original, start, len);
+    
+    if (substring) {
+        printf("Substring: %s\n", substring);
+        free(substring);
+    } else {
+        printf("Memory allocation failed.\n");
+    }
+    
+    return 0;
 }
