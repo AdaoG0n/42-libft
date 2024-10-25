@@ -19,11 +19,11 @@ but with the prefix `ft_` in the function names.<br/>
 
 In the Makefile, it's necessary to include the following commands:<br/>
 <br/>
-   NAME: the name of the library (in this case, libft.a).<br/>
-   all: command that will compile all files and create the library.<br/>
-   clean: command that deletes object files (.o).<br/>
-   fclean: command that deletes object files and the libft.a library.<br/>
-   re: command that executes fclean and then recompiles everything (a complete "rebuild").<br/>
+   `NAME`: the name of the library (in this case, libft.a).<br/>
+   `all`: command that will compile all files and create the library.<br/>
+   `clean`: command that deletes object files `(.o)`.<br/>
+   `fclean`: command that deletes object files and the libft.a library.<br/>
+   `re`: command that executes fclean and then recompiles everything (a complete "rebuild").<br/>
 
 ### Technical Considerations
 
