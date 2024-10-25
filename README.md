@@ -8,12 +8,12 @@
 
 Create a library called libft.a, which will contain various implemented functions,<br/>
 with behaviors similar to the functions of the standard C language library (libc),<br/>
-but with the prefix ft_ in the function names.<br/>
+but with the prefix `ft_` in the function names.<br/>
 
 ### Files to submit<br/>
  A Makefile: to automate the compilation of the library.<br/>
     The header file libft.h: where the functions to be implemented will be declared.<br/>
-    The source code files, with names in the format ft_*.c: for example, ft_strlen.c, ft_isalpha.c, and so on.<br/>
+    The source code files, with names in the format `ft_*.c`: for example, `ft_strlen.c`, `ft_isalpha.c`, and so on.<br/>
 
 ### Makefile Rules
 
@@ -30,12 +30,12 @@ In the Makefile, it's necessary to include the following commands:<br/>
 Global variables are prohibited.<br/>
     Use static functions when auxiliary functions are needed within a file.<br/>
     Place all files in the root directory of the repository.
-    Compile the files with the flags: -Wall, -Wextra and -Werror.<br/>
+    Compile the files with the flags: `-Wall, -Wextra and -Werror`.<br/>
     The library must be created using the "ar" command and the generated file (libft.a) must be in the root directory.<br/>
 
 ### Recreating standard library functions (Libc)
 
-It's necessary to recreate the following functions from the standard C language library, using the prefix ft_ for each of them.<br/>
+It's necessary to recreate the following functions from the standard C language library, using the prefix `ft_` for each of them.<br/>
 The implementations must follow the specifications of the man page for each function, but without using the restrict qualifier (which is part of the C99 standard). Below is the list of functions:<br/>
 <br/>
     Functions that don't use dynamic memory allocation:<br/>
@@ -46,18 +46,18 @@ The implementations must follow the specifications of the man page for each func
         strnstr, atoi<br/>
 <br/>
     Functions that require dynamic memory allocation (using malloc):<br/>
-        calloc, strdup<br/>
+        calloc`, strdup<br/>
 
 ### General Tips
 
- To understand how each function works, you can consult the "man pages" (for example, man strlen to see how strlen works).<br/>
- When implementing the functions, follow the original signature, but add the ft_ prefix. For example:<br/>
-        int strlen(const char *s); → int ft_strlen(const char *s);<br/>
-    Make sure all functions compile correctly with warnings and errors enabled (flags: -Wall, -Wextra, -Werror).<br/>
+ To understand how each function works, you can consult the `man pages` (for example, `man strlen` to see how strlen works).<br/>
+ When implementing the functions, follow the original signature, but add the `ft_` prefix. For example:<br/>
+        `int strlen(const char *s)`; → `int ft_strlen(const char *s)`;<br/>
+    Make sure all functions compile correctly with warnings and errors enabled (flags: `-Wall, -Wextra, -Werror`).<br/>
 
 ### Using the Makefile and creating the library
 
-In the Makefile, use the "ar" command to create the static library from the .o files. Something like this:<br/>
+In the Makefile, use the `ar` command to create the static library from the `.o` files. Something like this:<br/>
 
 		makefile
 
@@ -82,7 +82,7 @@ In the Makefile, use the "ar" command to create the static library from the .o f
 
 ### Next steps
 
-    Implement each function in its own .c file.
+    Implement each function in its own `.c` file.
     Add the declaration of the functions in the libft.h file.
     Test the functions to ensure they behave as expected.
     Compile the library with the Makefile.
