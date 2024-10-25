@@ -39,14 +39,14 @@ It's necessary to recreate the following functions from the standard C language 
 The implementations must follow the specifications of the man page for each function, but without using the restrict qualifier (which is part of the C99 standard). Below is the list of functions:<br/>
 <br/>
     Functions that don't use dynamic memory allocation:<br/>
-        isalpha, isdigit, isalnum, isascii, isprint<br/>
-        strlen, memset, bzero, memcpy, memmove<br/>
-        strlcpy, strlcat, toupper, tolower<br/>
-        strchr, strrchr, strncmp, memchr, memcmp<br/>
-        strnstr, atoi<br/>
+        `isalpha`, `isdigit`, `isalnum`, `isascii`, `isprint`<br/>
+        `strlen`, `memset`, `bzero`, `memcpy`, `memmove`<br/>
+        `strlcpy`, `strlcat`, `toupper`, `tolower`<br/>
+        `strchr`, `strrchr`, `strncmp`, `memchr`, `memcmp`<br/>
+        `strnstr`, `atoi`<br/>
 <br/>
     Functions that require dynamic memory allocation (using malloc):<br/>
-        calloc`, strdup<br/>
+        `calloc`, `strdup`<br/>
 
 ### General Tips
 
