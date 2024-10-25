@@ -6,7 +6,7 @@
 
 ### Objective
 
-Create a library called libft.a, which will contain various implemented functions,<br/>
+Create a library called `libft.a`, which will contain various implemented functions,<br/>
 with behaviors similar to the functions of the standard C language library (libc),<br/>
 but with the prefix `ft_` in the function names.<br/>
 
