@@ -1,5 +1,5 @@
 
-# <a href="#" style="pointer-events: none;"> <img src="https://img.shields.io/badge/status-In_Progress-success?color=black&style=flat-square"/></a> <a href="https://github.com/AdaoG0n" style="pointer-events: none;"> <img src="https://img.shields.io/badge/Follow-me?color=%2312bab9&style=flat-square"/></a> • 42 libft 
+# <a href="#" style="pointer-events: none;"> <img src="https://img.shields.io/badge/status-finished-success?color=%2312bab9&style=flat-square"/></a> <a href="https://github.com/AdaoG0n" style="pointer-events: none;"> <img src="https://img.shields.io/badge/Follow-me?color=%2312bab9&style=flat-square"/></a> • 42 libft 
  <a href="#" style="pointer-events: none;">
  <img align="right" src="https://github.com/AdaoG0n/AdaoG0n/blob/main/assests/libft42.png" width="400"/>
  </a>
@@ -82,10 +82,10 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 
 ### Next steps
 
-    Implement each function in its own `.c` file.
-    Add the declaration of the functions in the libft.h file.
-    Test the functions to ensure they behave as expected.
-    Compile the library with the Makefile.
+* Implement each function in its own `.c` file.
+* Add the declaration of the functions in the libft.h file.
+* Test the functions to ensure they behave as expected.
+* Compile the library with the Makefile.
     
 
 ### Types of functions:
@@ -110,7 +110,7 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
         ft_itoa
         
     	Memory allocation functions:
-        ft_calloc
+         ft_calloc
         ft_strdup
         
     	More complex string manipulation functions:
@@ -125,41 +125,44 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
         
     	Output functions:
         ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
+> [!TIP]
+> ### Study tips:
+> <br/>
+> Start with the simplest functions and progress gradually. <br/>
+> <br/>
+> For each function: <br/>
+> Read the description and understand what it should do. <br/>
+> Analyze the code line by line. <br/>
+> Write comments explaining what each part of the code does. <br/>
+> Try to rewrite the function on your own without looking at the original code. <br/>
+> Create test cases to verify if the function works correctly. <br/>
+> <br/>
+> Use resources such as: <br/>
+> The manual page (man) to understand the original libc functions. <br/>
+> Draw diagrams to visualize how functions manipulate memory or strings. <br/>
+> Write small programs that use these functions to see how they work in practice. <br/>
+> Practice explaining each function out loud, as if you were teaching someone. <br/>
+> Identify patterns and concepts that repeat across functions (such as memory allocation, iteration over strings, etc.). <br/>
+> Don't hesitate to review basic C concepts, such as pointers, memory allocation, and string manipulation. <br/>
 
-### Study tips:
-
-    Start with the simplest functions and progress gradually.
-    For each function:
-        Read the description and understand what it should do.
-        Analyze the code line by line.
-        Write comments explaining what each part of the code does.
-        Try to rewrite the function on your own without looking at the original code.
-        Create test cases to verify if the function works correctly.
-    Use resources such as:
-        The manual page (man) to understand the original libc functions.
-        Draw diagrams to visualize how functions manipulate memory or strings.
-        Write small programs that use these functions to see how they work in practice.
-    Practice explaining each function out loud, as if you were teaching someone.
-    Identify patterns and concepts that repeat across functions (such as memory allocation, iteration over strings, etc.).
-    Don't hesitate to review basic C concepts, such as pointers, memory allocation, and string manipulation.
-
-Remember, understanding comes with time and practice. 
-Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.
-Good luck with your studies!
+>[!Important]
+>Remember, understanding comes with time and practice. 
+>Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.
+>Good luck with your studies!
 
 
 ### Some testers
 
-[Francinette](https://github.com/xicodomingues/francinette)<br/>
-[libftTester](https://github.com/Tripouille/libftTester)<br/>
-[libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/>
-[libft-war-machine](https://github.com/0x050f/libft-war-machine)
+- [ ] [Francinette](https://github.com/xicodomingues/francinette)<br/>
+- [ ] [libftTester](https://github.com/Tripouille/libftTester)<br/>
+- [ ] [libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/> 
+- [ ] [libft-war-machine](https://github.com/0x050f/libft-war-machine)
 
 
-<img align="center" src="./src/libftwarmachinepassed.png" width="50%"/>
-<img align="center" src="./src/libftunittestpassed.png" width="50%"/>
-<img align="center" src="./src/libfttesterpassed.png" width="50%"/>
-<img align="center" src="./src/fsoarespassed.png" width="50%"/>
+<img align="center" width="700" src="./src/libftwarmachinepassed.png" width="50%"/>
+<img align="center" width="700" src="./src/libftunittestpassed.png" width="50%"/>
+<img align="center" width="700" src="./src/libfttesterpassed.png" width="50%"/>
+<img align="center" width="700" src="./src/fsoarespassed.png" width="50%"/>
 
 
 ### Earned skills
