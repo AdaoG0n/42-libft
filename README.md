@@ -146,9 +146,9 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 > Don't hesitate to review basic C concepts, such as pointers, memory allocation, and string manipulation. <br/>
 
 >[!Important]
->Remember, understanding comes with time and practice. 
->Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.
->Good luck with your studies!
+>Remember, understanding comes with time and practice. <br/>
+>Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.<br/>
+>Good luck with your studies!<br/>
 
 
 ### Some testers
