@@ -156,7 +156,8 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 - [ ] [Francinette](https://github.com/xicodomingues/francinette)<br/>
 - [ ] [libftTester](https://github.com/Tripouille/libftTester)<br/>
 - [ ] [libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/> 
-- [ ] [libft-war-machine](https://github.com/0x050f/libft-war-machine)
+- [ ] [libft-war-machine](https://github.com/0x050f/libft-war-machine)</br>
+- [ ] [libft learn](https://github.com/AdaoG0n/Training_programs_C/tree/main/libft_learn) (Learn how every function in libft works)</br>
 
 
 <img align="center" width="700" src="./src/libftwarmachinepassed.png" width="50%"/>
