@@ -10,6 +10,8 @@ Create a library called `libft.a`, which will contain various implemented functi
 with behaviors similar to the functions of the standard C language library (libc),<br/>
 but with the prefix `ft_` in the function names.<br/>
 
+- [ ] [libft learn](https://github.com/AdaoG0n/Training_programs_C/tree/main/libft_learn) (Learn how every function in libft works)
+
 ### Files to submit<br/>
  A Makefile: to automate the compilation of the library.<br/>
     The header file libft.h: where the functions to be implemented will be declared.<br/>
