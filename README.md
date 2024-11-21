@@ -173,7 +173,7 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 
 ## Testers
 
-| Libft                                                                  | Autor           |
+| Libft                                                                  | Author           |
 | :--------------------------------------------------------------------- | :---            |
 | [francinette](https://github.com/xicodomingues/francinette)            | `xicodomingues` |
 | [libftTester](https://github.com/Tripouille/libftTester)               | `Tripouille`    |
