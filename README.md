@@ -157,6 +157,16 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 >Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.<br/>
 >Good luck with your studies!<br/>
 
+## Usefull links
+
+| Resource                                                                                 |
+| :--------------------------------------------------------------------------------------- |
+| [Libft - C Standard Library Rewrite](https://www.asidesigned.com/project-libft.html)     |
+| [Easy Makefile](https://pulgamecanica.herokuapp.com/posts/makefiles)                     |
+| [Master Memory Management](https://medium.com/p/b86fedd39b96)                            |
+| [Make-A-Make: Clear the fog around Makefiles](https://github.com/Nuno-Jesus/Make-A-Make) |
+
+
 ## Testers
 
 | Libft                                                                  | Autor           |
@@ -167,15 +177,6 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 | [libft-unit-test](https://github.com/alelievr/libft-unit-test)         | `alelievr`      | 
 | [Libftest](https://github.com/jtoty/Libftest)                          | `jtoty`         |
 | [libft-war-machine](https://github.com/0x050f/libft-war-machine)       | `0x050f`        |
-
-## Usefull links
-
-| Resource                                                                                 |
-| :--------------------------------------------------------------------------------------- |
-| [Libft - C Standard Library Rewrite](https://www.asidesigned.com/project-libft.html)     |
-| [Easy Makefile](https://pulgamecanica.herokuapp.com/posts/makefiles)                     |
-| [Master Memory Management](https://medium.com/p/b86fedd39b96)                            |
-| [Make-A-Make: Clear the fog around Makefiles](https://github.com/Nuno-Jesus/Make-A-Make) |
 
 
 ### Earned skills
