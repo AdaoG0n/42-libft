@@ -6,7 +6,7 @@
 </br>
  </a>
 <p align="center">
-  <a href="#testers">Testers</a>  •  <a href="#usefull-links">Usefull Links</a>  •  <a href="#study-tips">Study tips</a> 
+  <a href="#testers">Testers</a>  •  <a href="#useful-links">Useful Links</a>  •  <a href="#study-tips">Study tips</a> 
 </p>
 
 ## Objective
@@ -160,7 +160,7 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 >Don't worry if you don't understand everything at once. Regularly revisit previous functions to reinforce your understanding.<br/>
 >Good luck with your studies!<br/>
 
-## Usefull links
+## Useful links
 
 | Resource                                                                                 |
 | :--------------------------------------------------------------------------------------- |
