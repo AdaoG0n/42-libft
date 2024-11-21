@@ -5,9 +5,11 @@
 </br>
 </br>
  </a>
+<p align="center">
+  <a href="#testers">Testers</a>  •  <a href="#objective">Objective</a>
+</p>
 
-
-# Objective
+## Objective
 
 Create a library called `libft.a`, which will contain various implemented functions,<br/>
 with behaviors similar to the functions of the standard C language library (libc),<br/>
@@ -156,20 +158,16 @@ In the Makefile, use the `ar` command to create the static library from the `.o`
 >Good luck with your studies!<br/>
 
 
-### Some testers
+## Testers
 
-- [ ] [Francinette](https://github.com/xicodomingues/francinette)<br/>
-- [ ] [libftTester](https://github.com/Tripouille/libftTester)<br/>
-- [ ] [libft_Unit_test](https://github.com/alelievr/libft-unit-test)<br/> 
-- [ ] [libft-war-machine](https://github.com/0x050f/libft-war-machine)</br>
-- [ ] [libft learn](https://github.com/AdaoG0n/Training_programs_C/tree/main/libft_learn) (Learn how every function in libft works)</br>
-
-
-<img align="center" width="700" src="./src/libftwarmachinepassed.png" width="50%"/>
-<img align="center" width="700" src="./src/libftunittestpassed.png" width="50%"/>
-<img align="center" width="700" src="./src/libfttesterpassed.png" width="50%"/>
-<img align="center" width="700" src="./src/fsoarespassed.png" width="50%"/>
-
+| Libft                                                                  | Autor           |
+| :--------------------------------------------------------------------- | :---            |
+| [francinette](https://github.com/xicodomingues/francinette)            | `xicodomingues` |
+| [libftTester](https://github.com/Tripouille/libftTester)               | `Tripouille`    |
+| [libft_file_checker](https://github.com/Nuno-Jesus/libft_file_checker) | `Nuno-Jesus`    |
+| [libft-unit-test](https://github.com/alelievr/libft-unit-test)         | `alelievr`      | 
+| [Libftest](https://github.com/jtoty/Libftest)                          | `jtoty`         |
+| [libft-war-machine](https://github.com/0x050f/libft-war-machine)       | `0x050f`        |
 
 ### Earned skills
 <p align="left">
